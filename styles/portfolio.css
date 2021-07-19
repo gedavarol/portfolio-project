@@ -1,39 +1,38 @@
 :root {
   --primary-color: #233142;
   --secondary-color: #e16428;
+  --background-color: #edfffa;
+  --heading-font-family: "Bree Serif", serif;
+  --primary-font-family: "Fjalla One", sans-serif;
+  --secondary-font-family: "Rubik", sans-serif;
 }
 
 h1 {
-  font-family: "Bree Serif", serif;
-  font-size: 98px;
+  font-family: var(--heading-font-family);
+  font-size: 76px;
   margin: 0 0 8px;
 }
 
 h2 {
-  font-family: "Fjalla One", sans-serif;
-  font-size: 50px;
+  font-family: var(--primary-font-family);
+  font-size: 52px;
   font-weight: bold;
   color: var(--primary-color);
 }
 h3 {
-  font-family: "Rubik", sans-serif;
+  font-family: var(--secondary-font-family);
   color: var(--primary-color);
-  font-size: 35px;
-}
-p {
-  font-family: "Fira Sans", sans-serif;
-  text-align: center;
+  font-size: 34px;
 }
 .hero {
-  background: #e4f1fe;
-  padding: 200px 70px;
+  background: var(--background-color);
+  padding: 160px 20px;
   text-align: center;
 }
 button {
-  font-family: "Bree Serif", serif;
+  font-family: var(--heading-font-family);
   color: white;
   background: var(--secondary-color);
-  font-family: "Fjalla One", sans-serif;
   font-size: 25px;
   padding: 20px 10px;
   border-radius: 15px;
