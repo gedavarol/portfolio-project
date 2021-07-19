@@ -1,12 +1,46 @@
+:root {
+  --primary-color: #233142;
+  --secondary-color: #e16428;
+}
+
 h1 {
   font-family: "Bree Serif", serif;
+  font-size: 98px;
+  margin: 0 0 8px;
 }
 
 h2 {
   font-family: "Fjalla One", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: var(--primary-color);
 }
 h3 {
   font-family: "Rubik", sans-serif;
+  color: var(--primary-color);
+  font-size: 35px;
 }
 p {
+  font-family: "Fira Sans", sans-serif;
+  text-align: center;
+}
+.hero {
+  background: #e4f1fe;
+  padding: 200px 70px;
+  text-align: center;
+}
+button {
+  font-family: "Bree Serif", serif;
+  color: white;
+  background: var(--secondary-color);
+  font-family: "Fjalla One", sans-serif;
+  font-size: 25px;
+  padding: 20px 10px;
+  border-radius: 15px;
+  border: solid var(--secondary-color) 1px;
+  margin: 20px 10px;
+}
+button:hover {
+  color: var(--secondary-color);
+  background: white;
 }
