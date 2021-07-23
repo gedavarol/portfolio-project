@@ -54,7 +54,7 @@ button {
   font-size: 18px;
   color: white;
   background: var(--secondary-color);
-  padding: 20px 10px;
+  padding: 20px 20px;
   border-radius: 15px;
   border: solid var(--secondary-color) 1px;
   margin: 20px 10px;
@@ -69,7 +69,9 @@ button:hover {
 }
 
 .section-line {
-  color: #0d3e44;
+  background-color: palegreen;
+  border-style: dashed solid;
+  border-width: 5px;
 }
 
 @media (max-width: 1000px) {
@@ -82,13 +84,12 @@ button:hover {
   h3 {
     font-size: 25px;
   }
-
   .image-column {
     text-align: center;
     display: block;
   }
   .project-definition {
-    margin: 40px;
+    margin: 20px;
     text-align: center;
   }
 }
