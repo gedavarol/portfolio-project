@@ -70,8 +70,8 @@ button:hover {
 
 .section-line {
   background-color: palegreen;
-  border-style: dashed solid;
-  border-width: 5px;
+  border-style: double;
+  border-width: 3px;
 }
 
 @media (max-width: 1000px) {
