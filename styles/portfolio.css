@@ -63,10 +63,6 @@ button:hover {
   color: var(--secondary-color);
   background: white;
 }
-.definition {
-  margin: 10px auto;
-  margin-top: 80px;
-}
 
 .section-line {
   background-color: palegreen;
