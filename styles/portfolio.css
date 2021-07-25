@@ -46,12 +46,9 @@ img {
 }
 strong {
   color: var(--secondary-color);
+  font-size: 35px;
 }
-.hero {
-  background: var(--background-color);
-  padding: 160px 20px;
-  text-align: center;
-}
+
 button {
   font-family: var(--heading-font-family);
   font-size: 20px;
@@ -66,7 +63,15 @@ button:hover {
   color: var(--secondary-color);
   background: white;
 }
-
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+.hero {
+  background: var(--background-color);
+  padding: 160px 20px;
+  text-align: center;
+}
 .project-headings {
   text-align: start;
   display: flex;
@@ -74,6 +79,17 @@ button:hover {
   justify-content: center;
   margin-top: 200px;
   line-height: 2;
+}
+.phone-number {
+  margin: 60px 40px;
+}
+.email {
+  text-align: center;
+  margin: 60px 40px;
+}
+.linkedin {
+  text-align: right;
+  margin: 60px 40px;
 }
 @media (max-width: 1000px) {
   .hero {
@@ -98,6 +114,10 @@ button:hover {
     font-size: 34px;
     line-height: 1.5;
   }
+  a,
+  .phone-number strong {
+    font-size: 25px;
+  }
   .image-column {
     text-align: center;
     display: block;
@@ -121,5 +141,8 @@ button:hover {
     font-size: 35px;
     line-height: 1.5;
     padding: 0 20px 0 20px;
+  }
+  .contact-info {
+    text-align: center;
   }
 }
