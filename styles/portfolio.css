@@ -107,6 +107,9 @@ nav li a:hover {
   margin-top: 200px;
   line-height: 2;
 }
+.contact-info {
+  font-size: 36px;
+}
 .phone-number {
   margin: 60px 40px;
 }
@@ -191,5 +194,8 @@ nav li a:hover {
   }
   .contact-info {
     text-align: center;
+  }
+  .linkedin.link {
+    max-width: 100px;
   }
 }
