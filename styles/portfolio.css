@@ -1,6 +1,7 @@
 :root {
   --primary-color: #233142;
   --secondary-color: #e16428;
+  --heading-color: #fbf2d5;
   --background-color: linear-gradient(
     109.6deg,
     rgb(0, 0, 0) 11.2%,
@@ -15,7 +16,7 @@ h1 {
   font-family: var(--heading-font-family);
   font-size: 76px;
   margin: 0 0 8px;
-  color: white;
+  color: var(--heading-color);
   line-height: 1.2;
 }
 
@@ -24,13 +25,13 @@ h2 {
   font-size: 52px;
   font-weight: bold;
   color: var(--primary-color);
-  color: white;
+  color: var(--heading-color);
 }
 h3 {
   font-family: var(--secondary-font-family);
   color: var(--primary-color);
   font-size: 34px;
-  color: white;
+  color: var(--heading-color);
 }
 h4 {
   font-size: 40px;
@@ -52,7 +53,7 @@ strong {
 button {
   font-family: var(--heading-font-family);
   font-size: 20px;
-  color: white;
+  color: var(--heading-color);
   background: var(--secondary-color);
   padding: 20px 20px;
   border-radius: 15px;
@@ -61,16 +62,42 @@ button {
 }
 button:hover {
   color: var(--secondary-color);
-  background: white;
+  color: var(--heading-color);
 }
 a {
   text-decoration: none;
   color: var(--secondary-color);
 }
-.hero {
+nav {
+  color: var(--heading-color);
+  font-size: 35px;
+  margin: 0;
+  padding: 60px 0;
+}
+
+.active {
+  color: var(--secondary-color);
+}
+
+.first-section {
   background: var(--background-color);
-  padding: 160px 20px;
+}
+.hero {
+  padding: 100px 20px;
   text-align: center;
+}
+nav li {
+  display: inline;
+  margin-left: 40px;
+}
+nav li a {
+  color: #fbf2d5;
+}
+nav li a:hover {
+  color: var(--secondary-color);
+}
+.heading-name {
+  margin-right: 300px;
 }
 .project-headings {
   text-align: start;
@@ -100,8 +127,7 @@ a {
     line-height: 1.2;
   }
   h2 {
-    font-size: 60px;
-    margin-bottom: 20px;
+    font-size: 40px;
   }
   h3 {
     font-size: 25px;
@@ -113,6 +139,27 @@ a {
     margin-bottom: 20px;
     font-size: 34px;
     line-height: 1.5;
+  }
+  nav li {
+    display: inline;
+    margin: 10px;
+  }
+
+  nav li a {
+    font-size: 20px;
+    line-height: 2;
+    padding: 0;
+  }
+  nav ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  .hero {
+    padding: 40px 20px;
+  }
+  .heading-name {
+    display: none;
   }
   a,
   .phone-number strong {
