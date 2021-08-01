@@ -123,12 +123,15 @@ nav li a:hover {
   text-align: center;
   margin: 60px 40px;
 }
+
 .linkedin {
   text-align: right;
   margin: 60px 40px;
   color: var(--linkedin-color);
 }
-
+.github {
+  color: black;
+}
 footer .social-links {
   text-align: center;
   padding: 10px 10px;
