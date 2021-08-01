@@ -50,17 +50,17 @@ strong {
   font-size: 35px;
 }
 
-button {
+.button a {
   font-family: var(--heading-font-family);
-  font-size: 20px;
+  font-size: 25px;
   color: var(--heading-color);
   background: var(--secondary-color);
   padding: 20px 20px;
   border-radius: 15px;
   border: solid var(--secondary-color) 1px;
-  margin: 20px 0;
 }
-button:hover {
+
+.button a:hover {
   color: var(--secondary-color);
   color: var(--heading-color);
 }
@@ -72,7 +72,11 @@ nav {
   color: var(--heading-color);
   font-size: 35px;
   margin: 0;
-  padding: 60px 0;
+  padding: 40px 0 0;
+}
+nav ul {
+  margin: 0;
+  padding: 0 0;
 }
 
 .active {
@@ -86,9 +90,10 @@ nav {
   padding: 100px 20px;
   text-align: center;
 }
+
 nav li {
   display: inline;
-  margin-left: 40px;
+  margin: 40px;
 }
 nav li a {
   color: #fbf2d5;
@@ -137,7 +142,7 @@ footer .social-links a {
     line-height: 1.2;
   }
   h1 {
-    font-size: 70px;
+    font-size: 50px;
     line-height: 1.2;
   }
   h2 {
@@ -184,6 +189,7 @@ footer .social-links a {
     display: block;
   }
   .definition {
+    padding: 20px 20px;
     margin: 20px;
     text-align: center;
   }
