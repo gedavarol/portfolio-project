@@ -2,6 +2,7 @@
   --primary-color: #233142;
   --secondary-color: #e16428;
   --heading-color: #fbf2d5;
+  --linkedin-color: #0a65c2;
   --background-color: linear-gradient(
     109.6deg,
     rgb(0, 0, 0) 11.2%,
@@ -50,19 +51,19 @@ strong {
   font-size: 35px;
 }
 
-.button a {
+.btn-branding {
   font-family: var(--heading-font-family);
-  font-size: 25px;
-  color: var(--heading-color);
+  font-size: 22px;
+  color: whitesmoke;
   background: var(--secondary-color);
-  padding: 20px 20px;
+  padding: 15px 20px;
   border-radius: 15px;
   border: solid var(--secondary-color) 1px;
 }
 
-.button a:hover {
+.btn-branding:hover {
   color: var(--secondary-color);
-  color: var(--heading-color);
+  background: whitesmoke;
 }
 a {
   text-decoration: none;
@@ -125,7 +126,9 @@ nav li a:hover {
 .linkedin {
   text-align: right;
   margin: 60px 40px;
+  color: var(--linkedin-color);
 }
+
 footer .social-links {
   text-align: center;
   padding: 10px 10px;
@@ -178,6 +181,9 @@ footer .social-links a {
     padding: 40px 20px;
   }
   .heading-name {
+    display: none;
+  }
+  .project-image {
     display: none;
   }
   a,
