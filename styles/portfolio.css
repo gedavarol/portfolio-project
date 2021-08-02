@@ -28,15 +28,19 @@ h2 {
   color: var(--primary-color);
   color: var(--heading-color);
 }
-h3,
-.open-source {
+h3 {
   font-family: var(--secondary-font-family);
   color: var(--heading-color);
-  font-size: 30px;
+  font-size: 24px;
   line-height: 1.5;
 }
+
+.project-link {
+  font-size: 24px;
+  color: blue;
+}
 h4 {
-  font-size: 36px;
+  font-size: 34px;
   margin-bottom: 20px;
 }
 
@@ -50,7 +54,7 @@ img {
 }
 strong {
   color: var(--secondary-color);
-  font-size: 30px;
+  font-size: 24px;
 }
 h3 .developer-text {
   color: var(--heading-color);
@@ -110,6 +114,10 @@ nav li a:hover {
 .heading-name {
   margin-right: 300px;
 }
+
+.projects-main-heading {
+  margin-bottom: 60px;
+}
 .project-headings {
   text-align: start;
   display: flex;
@@ -140,10 +148,6 @@ nav li a:hover {
 .github {
   color: black;
 }
-.open-source {
-  color: blue;
-}
-
 footer {
   margin: 0 232px;
   border-radius: 10px;
@@ -172,17 +176,22 @@ footer .social-links a {
   }
   h3,
   strong,
-  .open-source {
+  .project-link {
     font-size: 20px;
     text-align: center;
     line-height: 1.5;
   }
+  li {
+    text-decoration: none;
+  }
+
   h4 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 30px;
     line-height: 1.5;
   }
+
   nav li {
     display: inline;
     margin: 10px;
@@ -228,13 +237,20 @@ footer .social-links a {
     text-align: center;
     padding: 20px;
   }
+  h3 ul {
+    margin: 0;
+    padding: 0;
+  }
+
   .project-headings {
-    margin: 10px 0;
+    margin: 0;
+    padding: 0 20px;
   }
   .projects-main-heading {
     font-size: 35px;
     line-height: 1.5;
     padding: 0 20px 0 20px;
+    margin: 8px;
   }
   .contact-info {
     text-align: center;
