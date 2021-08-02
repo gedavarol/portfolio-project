@@ -145,9 +145,14 @@ nav li a:hover {
 .contact-info-inner {
   padding: 30px;
 }
-
+.portfolio-project {
+  text-align: center;
+  font-style: italic;
+  font-size: 24px;
+}
 .github {
-  color: black;
+  color: var(--linkedin-color);
+  font-size: 22px;
 }
 footer {
   margin: 0 232px;
@@ -260,6 +265,10 @@ footer .social-links a {
 
   .contact-info-inner {
     padding: 20px;
+  }
+  .portfolio-project,
+  .portfolio-project a {
+    font-size: 16px;
   }
   footer {
     margin: 0;
