@@ -35,9 +35,18 @@ h3 {
   line-height: 1.5;
 }
 
-.project-link {
+.info-link,
+.phone-number {
   font-size: 24px;
-  color: blue;
+  color: var(--linkedin-color);
+}
+
+.info-link:hover {
+  text-decoration: underline;
+}
+.fa-linkedin-in {
+  color: var(--linkedin-color);
+  font-size: 32px;
 }
 h4 {
   font-size: 34px;
@@ -127,24 +136,16 @@ nav li a:hover {
   line-height: 2;
 }
 .contact-info {
+  display: block;
+  margin: 0;
   font-size: 30px;
   color: black;
   text-align: center;
-  padding: 40px;
 }
-.phone-number {
-  margin: 60px 40px;
-}
-.email {
-  text-align: center;
-  margin: 60px 40px;
+.contact-info-inner {
+  padding: 30px;
 }
 
-.linkedin {
-  text-align: right;
-  margin: 60px 40px;
-  color: var(--linkedin-color);
-}
 .github {
   color: black;
 }
@@ -176,7 +177,7 @@ footer .social-links a {
   }
   h3,
   strong,
-  .project-link {
+  .info-link {
     font-size: 20px;
     text-align: center;
     line-height: 1.5;
@@ -252,8 +253,13 @@ footer .social-links a {
     padding: 0 20px 0 20px;
     margin: 8px;
   }
+
   .contact-info {
-    text-align: center;
+    font-size: 25px;
+  }
+
+  .contact-info-inner {
+    padding: 20px;
   }
   footer {
     margin: 0;
