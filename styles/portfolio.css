@@ -1,13 +1,13 @@
 :root {
-  --primary-color: #233142;
-  --secondary-color: #e16428;
-  --heading-color: #fbf2d5;
-  --linkedin-color: #0a65c2;
   --background-color: linear-gradient(
     109.6deg,
     rgb(0, 0, 0) 11.2%,
     rgb(11, 132, 145) 91.1%
   );
+  --primary-color: #233142;
+  --secondary-color: #e16428;
+  --heading-color: #fbf2d5;
+  --linkedin-color: #0a65c2;
   --heading-font-family: "Bree Serif", serif;
   --primary-font-family: "Fjalla One", sans-serif;
   --secondary-font-family: "Rubik", sans-serif;
@@ -19,17 +19,25 @@
 nav {
   padding: 20px 0 0;
 }
-
+nav hr {
+  color: var(--heading-color);
+}
 .nav-heading a {
   color: var(--heading-color);
   font-size: 24px;
   line-height: 2;
   margin: 60px;
 }
+a {
+  text-decoration: none;
+}
 a.active {
   color: var(--secondary-color);
 }
-
+.hero {
+  padding: 100px 20px;
+  text-align: center;
+}
 h1 {
   font-family: var(--heading-font-family);
   font-size: 76px;
@@ -37,7 +45,6 @@ h1 {
   color: var(--heading-color);
   line-height: 1.2;
 }
-
 h2 {
   font-family: var(--primary-font-family);
   font-size: 52px;
@@ -51,27 +58,23 @@ h3 {
   font-size: 24px;
   line-height: 1.5;
 }
-
-.info-link,
-.phone-number {
-  font-size: 24px;
-  color: var(--linkedin-color);
-  opacity: 1;
-}
-
-.info-link:hover {
-  text-decoration: underline;
-}
-.fa-linkedin-in {
-  color: var(--linkedin-color);
-  font-size: 32px;
+h3 .developer-text {
+  color: var(--heading-color);
 }
 h4 {
   font-size: 34px;
   margin-bottom: 20px;
 }
-nav hr {
-  color: var(--heading-color);
+.projects-main-heading {
+  margin-bottom: 60px;
+}
+.project-headings {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 200px;
+  line-height: 2;
 }
 p {
   line-height: 2;
@@ -85,10 +88,6 @@ strong {
   color: var(--secondary-color);
   font-size: 24px;
 }
-h3 .developer-text {
-  color: var(--heading-color);
-}
-
 .btn-branding {
   font-family: var(--heading-font-family);
   font-size: 22px;
@@ -98,30 +97,9 @@ h3 .developer-text {
   border-radius: 15px;
   border: solid var(--secondary-color) 1px;
 }
-
 .btn-branding:hover {
   color: var(--secondary-color);
   background: whitesmoke;
-}
-a {
-  text-decoration: none;
-}
-
-.hero {
-  padding: 100px 20px;
-  text-align: center;
-}
-
-.projects-main-heading {
-  margin-bottom: 60px;
-}
-.project-headings {
-  text-align: start;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 200px;
-  line-height: 2;
 }
 .contact-info {
   display: block;
@@ -134,31 +112,44 @@ a {
 .contact-info-inner {
   padding: 30px;
 }
+.info-link,
+.phone-number {
+  font-size: 24px;
+  color: var(--linkedin-color);
+  opacity: 1;
+}
+.info-link:hover {
+  text-decoration: underline;
+}
 .portfolio-project {
   text-align: center;
   font-style: italic;
   font-size: 20px;
   opacity: 0.7;
 }
-
 .github {
   color: var(--linkedin-color);
   font-size: 22px;
 }
 footer {
-  margin: 0 232px;
+  margin: 0;
+  padding: 10px 10px;
   border-radius: 10px;
 }
 footer .social-links {
   text-align: center;
-  padding: 10px 10px;
+  padding: 0;
   margin: 0;
 }
 footer .social-links a {
   font-size: 40px;
-  margin: 15px;
-  padding: 10px 20px;
-  border-radius: 30px;
+  text-align: center;
+  margin: 0;
+  padding: 25px;
+}
+.fa-linkedin-in {
+  color: var(--linkedin-color);
+  font-size: 32px;
 }
 @media (max-width: 1000px) {
   .nav-heading a {
@@ -168,6 +159,7 @@ footer .social-links a {
   .hero {
     line-height: 1.2;
     margin: 0;
+    padding: 40px 20px;
   }
   h1 {
     font-size: 40px;
@@ -185,34 +177,33 @@ footer .social-links a {
     line-height: 1.5;
     opacity: 1;
   }
-
-  li {
-    text-decoration: none;
+  h3 ul {
+    margin: 0;
+    padding: 0;
   }
-
   h4 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 28px;
     line-height: 1.5;
   }
-
-  .hero {
-    padding: 40px 20px;
+  li {
+    text-decoration: none;
+    list-style: inside;
+  }
+  .projects-main-heading {
+    font-size: 35px;
+    line-height: 1.5;
+    padding: 0 20px 0 20px;
+    margin: 8px;
+  }
+  .project-headings {
+    font-size: 18px;
+    margin: 0;
+    padding: 0 20px;
   }
   .heading-name {
     display: none;
-  }
-  .project-image {
-    display: none;
-  }
-  a,
-  .phone-number strong {
-    font-size: 25px;
-  }
-  .image-column {
-    text-align: center;
-    display: block;
   }
   .definition {
     padding: 20px 20px;
@@ -223,51 +214,32 @@ footer .social-links a {
     text-align: center;
     margin-bottom: 20px;
   }
+  .project-image {
+    display: none;
+  }
   img {
     text-align: center;
     padding: 20px;
   }
-  h3 ul {
-    margin: 0;
-    padding: 0;
+  .image-column {
+    text-align: center;
+    display: block;
   }
-
-  .project-headings {
-    font-size: 18px;
-    margin: 0;
-    padding: 0 20px;
-  }
-  .projects-main-heading {
-    font-size: 35px;
-    line-height: 1.5;
-    padding: 0 20px 0 20px;
-    margin: 8px;
-  }
-
   .contact-info {
     font-size: 25px;
   }
-
   .contact-info-inner {
     padding: 20px;
+  }
+  a,
+  .phone-number strong {
+    font-size: 25px;
   }
   .portfolio-project,
   .portfolio-project a {
     font-size: 16px;
   }
-
-  footer {
-    margin: 0;
-  }
-  footer .social-links {
-    text-align: center;
-    padding: 10px 0;
-    margin: 0 20px;
-  }
   footer .social-links a {
     font-size: 25px;
-  }
-  li {
-    list-style: inside;
   }
 }
