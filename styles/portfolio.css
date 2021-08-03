@@ -12,6 +12,7 @@
   --primary-font-family: "Fjalla One", sans-serif;
   --secondary-font-family: "Rubik", sans-serif;
 }
+
 .first-section {
   background: var(--background-color);
   text-align: center;
@@ -102,7 +103,7 @@ strong {
   background: whitesmoke;
 }
 .gizem-image {
-  margin-top: 130px;
+  margin-top: 200px;
 }
 .contact-info {
   display: block;
@@ -194,6 +195,7 @@ footer .social-links a {
     text-decoration: none;
     list-style: inside;
   }
+
   .projects-main-heading {
     font-size: 35px;
     line-height: 1.5;
@@ -215,12 +217,11 @@ footer .social-links a {
   }
   .about-text {
     text-align: center;
-    margin-bottom: 20px;
   }
+
   .project-image {
     display: none;
   }
-
   img {
     text-align: center;
     padding: 20px;
@@ -230,7 +231,7 @@ footer .social-links a {
     display: block;
   }
   .gizem-image {
-    margin: 10px 10px;
+    margin: 10px 0;
   }
   .contact-info {
     font-size: 25px;
