@@ -101,6 +101,9 @@ strong {
   color: var(--secondary-color);
   background: whitesmoke;
 }
+.gizem-image {
+  margin-top: 130px;
+}
 .contact-info {
   display: block;
   margin: 20px 20px;
@@ -217,6 +220,7 @@ footer .social-links a {
   .project-image {
     display: none;
   }
+
   img {
     text-align: center;
     padding: 20px;
@@ -224,6 +228,9 @@ footer .social-links a {
   .image-column {
     text-align: center;
     display: block;
+  }
+  .gizem-image {
+    margin: 10px 10px;
   }
   .contact-info {
     font-size: 25px;
